@@ -1,0 +1,20 @@
+<html>
+    <script>
+        var matriz=[], A, B, res;
+        matriz[0]=[];
+        matriz[1]=[];
+        matriz[2]=[];
+        for(A=0;A<=2;A++){
+            for(B=0;B<=4;B++){
+             matriz[A][B]=parseInt(prompt((A+1)+"º valor:"));
+            }
+        }
+        for(A=0;A<=2;A++){
+            res=0
+            for(B=0;B<=4;B++){
+                res=res+matriz[A][B];
+            }
+            document.write(res+"<br>");
+        }
+    </script>
+</html>
